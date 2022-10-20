@@ -1,0 +1,11 @@
+<main class="container">
+  <div class="header">
+    <h1>Editing user</h1>
+  </div>
+
+  <%= turbo_frame_tag @user do %>
+    <%= render "form", user: @user %>
+  <% end %>
+
+  <%= link_to "Back to users", users_path %>
+</main>
